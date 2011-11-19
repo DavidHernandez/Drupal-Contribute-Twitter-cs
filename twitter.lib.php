@@ -90,7 +90,6 @@ class Twitter {
       // break no code.
       return array();
     }
-    $this->host = variable_get('twitter_host', 'api.twitter.com');
   }
 
   /**
