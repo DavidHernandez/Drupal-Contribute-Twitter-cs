@@ -51,7 +51,7 @@ class Twitter {
     if (!empty($username) && !empty($password)) {
       $this->set_auth($username, $password);
     }
-    $this->host = variable_get('twitter_host', 'twitter.com');
+    $this->host = variable_get('twitter_host', 'api.twitter.com');
   }
 
   /**
