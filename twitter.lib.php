@@ -351,7 +351,14 @@ class TwitterOAuth extends Twitter {
 
 class TwitterSearch extends Twitter {
 
-  protected $host = 'search.twitter.com';
+  protected $host;
+
+  /**
+   * Constructor for the Twitter class
+   */
+  public function __construct() {
+    $this->host = variable_get('twitter_search_host', 'search.twitter.com');
+  }
 
   public function search($params = array()) {
 
